@@ -4,10 +4,6 @@ import { AiOutlineClose } from "react-icons/ai";
 
 import logo from "../../images/logo4.png";
 
-const buttonClick = () => {
-  return console.log("Button pressed");
-};
-
 const NavbarItem = ({ title, classProps }) => {
   return <li className={`mx-4 cursor-pointer ${classProps}`}>{title}</li>;
 };
@@ -20,7 +16,7 @@ const Navbar = () => {
       <div className="md_flex-[0.5] flex-initial justify-center items-center">
         <img src={logo} alt="logo" className="w-64 cursor-pointer" />
       </div>
-      <ul className="text-cyan-300 md:flex hidden list-none flex-row justify-between items-center flex-initial">
+      <ul className="text-emerald-300 md:flex hidden list-none flex-row justify-between items-center flex-initial">
         {["Market", "Exchange", "Tutorials", "Wallets"].map((item, index) => (
           <NavbarItem key={item + index} title={item} />
         ))}
@@ -45,7 +41,7 @@ const Navbar = () => {
         {toggleMenu && (
           <ul
             className="z-10 fixed top-0 -right-2 p-3 w-[70vw] h-screen shadow-2xl md:hidden list-none
-           flex flex-col justify-start items-end rounded-md blue-glassmorphism text-cyan-300 animate-slide-in"
+           flex flex-col justify-start items-end rounded-md blue-glassmorphism text-emerald-300 animate-slide-in"
           >
             <li className="text-3xl 2-full my-2">
               <AiOutlineClose onClick={() => setToggleMenu(false)} />

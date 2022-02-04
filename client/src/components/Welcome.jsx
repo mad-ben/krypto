@@ -56,12 +56,16 @@ const Welcome = () => {
     <div className="flex w-full justify-center items-center">
       <div className="flex mf:flex-row flex-col items-start justify-between md:p-20 py-12 px-4">
         <div className="flex flex-1 justify-start flex-col mf:mr-10">
-          <h1 className="text-5x1 sm:text-5xl text-cyan-300 py-1">
-            Crypto <br /> anywhere anytime
+          <h1 className="text-5x1 sm:text-5xl text-white py-1">
+            Next iteration of internet
           </h1>
-          <p className="text-cyan-200 md:9/12 w-11/12 text-base">
+          <h3 className="text-emerald-400">
+            Platform to get latest news about <br />
+            blockchain technology and cryptocurrency
+          </h3>
+          {/*<p className="text-emerald-200 md:9/12 w-11/12 text-base">
             Unleash web 3.0
-          </p>
+  </p>*/}
           {!currentAccount && (
             <button
               type="button"
@@ -73,14 +77,12 @@ const Welcome = () => {
           )}
 
           <div className="grid sm:grid-cols-3  grid-cols-2 w-full mt-10">
-            <div className={` rounded-tl-2xl ${commonStyles} `}>
-              Reliability
-            </div>
+            <div className={commonStyles}>Reliability</div>
             <div className={commonStyles}>Security</div>
-            <div className={` rounded-tr-2xl ${commonStyles} `}>Ethereum</div>
-            <div className={` rounded-bl-2xl ${commonStyles} `}>Web 3.0</div>
+            <div className={commonStyles}>Ethereum</div>
+            <div className={commonStyles}>Web 3.0</div>
             <div className={commonStyles}>Low Fees</div>
-            <div className={` rounded-br-2xl ${commonStyles} `}>Blockchain</div>
+            <div className={commonStyles}>Blockchain</div>
           </div>
         </div>
         <div className="flex flex-col flex-1 items-center justify-start w-full mf:mt-0 mt-10">
@@ -119,7 +121,7 @@ const Welcome = () => {
               type="text"
               handleChange={handleChange}
             />
-            <div className="h-[2px] w-full bg-cyan-300 my-2" />
+            <div className="h-[2px] w-full bg-emerald-300 my-2" />
 
             {isLoading ? (
               <Loader />
@@ -127,7 +129,7 @@ const Welcome = () => {
               <button
                 type="button"
                 onClick={handleSubmit}
-                className="text-cyan-300 w-full mt-2 border-[1px] p-2 border-[#3dfee2] rounded-full cursor-pointer"
+                className="text-emerald-300 w-full mt-2 border-[1px] p-2 border-[#3dfee2] rounded-full cursor-pointer"
               >
                 Send now
               </button>

@@ -28,7 +28,7 @@ const TransactionCard = ({
             target="_blank"
             rel="noopener noreferrer"
           >
-            <p className="text-cyan-300 text-base">
+            <p className="text-emerald-300 text-base">
               From: {shortenAddress(addressFrom)}
             </p>
           </a>
@@ -37,19 +37,19 @@ const TransactionCard = ({
             target="_blank"
             rel="noopener noreferrer"
           >
-            <p className="text-cyan-300 text-base">
+            <p className="text-emerald-300 text-base">
               To: {shortenAddress(addressTo)}
             </p>
           </a>
-          <p className="text-cyan-300 text-base">Amount: {amount} ETH</p>
+          <p className="text-emerald-300 text-base">Amount: {amount} ETH</p>
 
           {message && (
             <>
               <br />
-              <p className="text-cyan-300 text-base"> Message: {message}</p>
+              <p className="text-emerald-300 text-base"> Message: {message}</p>
             </>
           )}
-          <p className="text-cyan-300 text-base">Time: {timestamp}</p>
+          <p className="text-emerald-300 text-base">Time: {timestamp}</p>
         </div>
       </div>
     </div>
@@ -63,11 +63,11 @@ const Transactions = () => {
     <div className="flex w-full justify-center items-center 2xl:px-20 gradient-bg-services2">
       <div className="flex flex-col md:p-12 py-12 px-4">
         {currentAccount ? (
-          <h3 className="text-cyan-300 text-3xl text-center my-2">
+          <h3 className="text-emerald-300 text-3xl text-center my-2">
             Latest Transactions
           </h3>
         ) : (
-          <h3 className="text-cyan-300 text-3xl text-center my-2">
+          <h3 className="text-emerald-300 text-3xl text-center my-2">
             Connect your wallet to see lastest movements
           </h3>
         )}
