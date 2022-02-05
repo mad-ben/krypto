@@ -67,9 +67,9 @@ const Transactions = () => {
             Latest Transactions
           </h3>
         ) : (
-          <h3 className="text-emerald-300 text-3xl text-center my-2">
-            Connect your wallet to see lastest movements
-          </h3>
+          <h5 className="text-white text-center my-2">
+            Connect to web 3.0 in order to see your lastest transactions...
+          </h5>
         )}
 
         <div className="flex flex-wrap justify-center items-center mt-1 my-2">

@@ -5,9 +5,11 @@ import { Link } from "react-router-dom";
 
 import logo from "../../images/logo4.png";
 
-const NavbarItem = ({ title, classProps }) => {
+{
+  /*const NavbarItem = ({ title, classProps }) => {
   return <li className={`mx-4 cursor-pointer ${classProps}`}>{title}</li>;
-};
+};*/
+}
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -21,19 +23,19 @@ const Navbar = () => {
         {/*{["Market", "Exchange", "Tutorials", "Wallets"].map((item, index) => (
           <NavbarItem key={item + index} title={item} />
         ))}*/}
-        <Link to="/" className="mx-4 ">
+        <Link to="/" className="mx-4 hover:text-white">
           {" "}
           Placeholder1
         </Link>
-        <Link to="/" className="mx-4 ">
+        <Link to="/" className="mx-4 hover:text-white">
           {" "}
           Placeholder2
         </Link>
-        <Link to="/" className="mx-4 ">
+        <Link to="/" className="mx-4 hover:text-white">
           {" "}
           Placeholder3
         </Link>
-        <li className="bg-[#3cffe2] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#45e0b4] text-black">
+        <li className="bg-[#3cffe2] py-2 px-7 mx-4 rounded-none cursor-pointer hover:bg-[#45e0b4] text-black hover:text-white">
           Login
         </li>
       </ul>
