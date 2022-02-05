@@ -70,7 +70,7 @@ const Welcome = () => {
             <button
               type="button"
               onClick={connectWallet}
-              className="flex flex-row justify-center items-center my-5 bg-[#3cffe2] p-3 rounded-full cursor-pointer hover:bg-[#45e0b4] text-black"
+              className="flex flex-row justify-center items-center my-5 bg-[#3cffe2] p-3 rounded-none cursor-pointer hover:bg-[#45e0b4] text-black"
             >
               Connect Wallet
             </button>
@@ -129,7 +129,7 @@ const Welcome = () => {
               <button
                 type="button"
                 onClick={handleSubmit}
-                className="text-emerald-300 w-full mt-2 border-[1px] p-2 border-[#3dfee2] rounded-full cursor-pointer"
+                className="text-emerald-300 w-full mt-2 border-[1px] p-2 border-[#3dfee2] rounded-none cursor-pointer"
               >
                 Send now
               </button>

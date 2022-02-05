@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { HiMenuAlt4 } from "react-icons/hi";
 import { AiOutlineClose } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 import logo from "../../images/logo4.png";
 
@@ -17,9 +18,21 @@ const Navbar = () => {
         <img src={logo} alt="logo" className="w-64 cursor-pointer" />
       </div>
       <ul className="text-emerald-300 md:flex hidden list-none flex-row justify-between items-center flex-initial">
-        {["Market", "Exchange", "Tutorials", "Wallets"].map((item, index) => (
+        {/*{["Market", "Exchange", "Tutorials", "Wallets"].map((item, index) => (
           <NavbarItem key={item + index} title={item} />
-        ))}
+        ))}*/}
+        <Link to="/" className="mx-4 ">
+          {" "}
+          Placeholder1
+        </Link>
+        <Link to="/" className="mx-4 ">
+          {" "}
+          Placeholder2
+        </Link>
+        <Link to="/" className="mx-4 ">
+          {" "}
+          Placeholder3
+        </Link>
         <li className="bg-[#3cffe2] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#45e0b4] text-black">
           Login
         </li>
@@ -46,7 +59,7 @@ const Navbar = () => {
             <li className="text-3xl 2-full my-2">
               <AiOutlineClose onClick={() => setToggleMenu(false)} />
             </li>
-            {["Market", "Exchange", "Tutorials", "Wallets"].map(
+            {/*{["Market", "Exchange", "Tutorials", "Wallets"].map(
               (item, index) => (
                 <NavbarItem
                   key={item + index}
@@ -54,7 +67,8 @@ const Navbar = () => {
                   classProps="my-2  text-lg"
                 />
               )
-            )}
+              )}*/}
+            {/** Add mobile navigation buttons */}
           </ul>
         )}
       </div>
