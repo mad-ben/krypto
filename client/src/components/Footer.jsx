@@ -1,14 +1,25 @@
+import { Link } from "react-router-dom";
+
 import logo from "../../images/logo4.png";
 
 const Footer = () => {
   return (
     <div className="w-full flex md:justify-center justify-between items-center flex-col p-4  gradient-bg-services2">
       <div className="w-full flex sm:flex-row flex-col justify-between items-center my-4">
-        <div className="flex flex-[0.5] justify-center items-center">
+        <div className="flex flex-[0.5] justify-center items-center cursor-pointer">
           <img src={logo} alt="logo" className="w-32"></img>
         </div>
-        <div className="flex flex-1 justify-evenly items-center flex-wrap sm:mt-0 mt-5 w-full">
-          <p className="text-emerald-300 text-base text-center mx-2 cursor-pointer">
+        <div className="flex flex-1 justify-evenly items-center flex-wrap sm:mt-0 mt-5 w-full text-emerald-300">
+          <Link to="/" className="mx-4 hover:text-white">
+            Market Information
+          </Link>
+          <Link to="/" className="mx-4 hover:text-white">
+            About
+          </Link>
+          <Link to="/" className="mx-4 hover:text-white">
+            FAQ
+          </Link>
+          {/*<p className="text-emerald-300 text-base text-center mx-2 cursor-pointer">
             Market
           </p>
           <p className="text-emerald-300 text-base text-center mx-2 cursor-pointer">
@@ -16,7 +27,7 @@ const Footer = () => {
           </p>
           <p className="text-emerald-300 text-base text-center mx-2 cursor-pointer">
             FAQ
-          </p>
+  </p>*/}
         </div>
       </div>
       <div className="flex justify-center items-center flex-col mt-5">
