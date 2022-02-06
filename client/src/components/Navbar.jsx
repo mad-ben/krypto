@@ -24,16 +24,13 @@ const Navbar = () => {
           <NavbarItem key={item + index} title={item} />
         ))}*/}
         <Link to="/" className="mx-4 hover:text-white">
-          {" "}
-          Placeholder1
+          Home
+        </Link>
+        <Link to="/Swap" className="mx-4 hover:text-white">
+          Exchange
         </Link>
         <Link to="/" className="mx-4 hover:text-white">
-          {" "}
-          Placeholder2
-        </Link>
-        <Link to="/" className="mx-4 hover:text-white">
-          {" "}
-          Placeholder3
+          Placeholder
         </Link>
         <li className="bg-[#3cffe2] py-2 px-7 mx-4 rounded-none cursor-pointer hover:bg-[#45e0b4] text-black hover:text-white">
           Login
