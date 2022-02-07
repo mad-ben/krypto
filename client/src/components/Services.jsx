@@ -35,6 +35,26 @@ const Services = () => {
           </CardContent>
         </Card>
         <Card sx={{ maxWidth: 345 }} variant="outlined">
+          <CardHeader title="Add languages" subheader="April, 2022" />
+          <CardMedia component="img" height="194" image={deximg} alt="deximg" />
+          <CardContent>
+            <Typography variant="body2" color="text.secondary">
+              Add more language support. For now, have english and portuguese at
+              least.
+            </Typography>
+          </CardContent>
+        </Card>
+        <Card sx={{ maxWidth: 345 }} variant="outlined">
+          <CardHeader title="Add more wallets" subheader="July, 2022" />
+          <CardMedia component="img" height="194" image={deximg} alt="deximg" />
+          <CardContent>
+            <Typography variant="body2" color="text.secondary">
+              Add a diverse array of wallets for users to authenticate and use.
+              For now metamask.
+            </Typography>
+          </CardContent>
+        </Card>
+        <Card sx={{ maxWidth: 345 }} variant="outlined">
           <CardHeader title="NFT marketplace" subheader="August, 2022" />
           <CardMedia component="img" height="194" image={nftimg} alt="nftimg" />
           <CardContent>
