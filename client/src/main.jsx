@@ -10,9 +10,7 @@ ReactDOM.render(
   <Router>
     <TransactionProvider>
       {/**Remove transaction provider at later stage */}
-      <MoralisProvider>
-        <App />
-      </MoralisProvider>
+      <App />
     </TransactionProvider>{" "}
     {/**Remove transaction provider at later stage */}
   </Router>,

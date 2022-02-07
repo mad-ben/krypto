@@ -17,8 +17,8 @@ const Navbar = () => {
         <Link to="/" className="mx-4 hover:text-white">
           Home
         </Link>
-        <Link to="/Swap" className="mx-4 hover:text-white">
-          Exchange
+        <Link to="/SendEth" className="mx-4 hover:text-white">
+          Send Ethereum
         </Link>
         <Link to="/" className="mx-4 hover:text-white">
           News

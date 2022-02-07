@@ -4,7 +4,7 @@ import {
   Welcome,
   Services,
   Transactions,
-  Swap,
+  SendEth,
 } from "./components";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { Routes, Route, Link } from "react-router-dom";
@@ -25,7 +25,7 @@ const App = () => {
         <div className="gradient-bg-services2">
           <Routes>
             <Route exact path="/" element={<Welcome />} />
-            <Route exact path="/swap" element={<Swap />} />
+            <Route exact path="/sendeth" element={<SendEth />} />
           </Routes>
         </div>
         <Services />
