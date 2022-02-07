@@ -9,8 +9,12 @@ import { TransactionProvider } from "./context/TransactionContext";
 ReactDOM.render(
   <Router>
     <TransactionProvider>
-      <App />
-    </TransactionProvider>
+      {/**Remove transaction provider at later stage */}
+      <MoralisProvider>
+        <App />
+      </MoralisProvider>
+    </TransactionProvider>{" "}
+    {/**Remove transaction provider at later stage */}
   </Router>,
   document.getElementById("root")
 );

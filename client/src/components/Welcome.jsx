@@ -2,12 +2,15 @@ import React, { useContext } from "react";
 import { AiFillPlayCircle } from "react-icons/ai";
 import { SiE, SiEthereum } from "react-icons/si";
 import { BsInfoCircle } from "react-icons/bs";
+import { useMoralis } from "react-moralis";
 
 import { TransactionContext } from "../context/TransactionContext";
 import { Loader } from "./";
 import { shortenAddress } from "../utils/shortenAddress";
 const commonStyles =
   "min-h-[70px] sm:px-0 px-2 sm:min-w-[120px] flex justify-center items-center border-[2px] border-emerald-400 text-sm font-light text-emerald-400";
+
+const { authenticate, isAuthenticated, user } = useMoralis();
 
 const Input = ({ placeholder, name, type, value, handleChange }) => (
   <input
@@ -52,8 +55,20 @@ const Welcome = () => {
     sendTransaction();
   };
 
+  const moralisConnect = async () => {
+    try {
+      if (!isAuthenticated) {
+        authenticate();
+      } else {
+        console.log("No accounts found.");
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   return (
-    <div className="flex w-full justify-center items-center">
+    <div className="flex w-full justify-start items-center">
       <div className="flex mf:flex-row flex-col items-start justify-between md:p-20 py-12 px-4">
         <div className="flex flex-1 justify-start flex-col mf:mr-10">
           <h1 className="text-5x1 sm:text-5xl text-white py-1">
@@ -69,7 +84,7 @@ const Welcome = () => {
           {!currentAccount && (
             <button
               type="button"
-              onClick={connectWallet}
+              onClick={moralisConnect}
               className="flex flex-row justify-center items-center my-5 bg-[#3cffe2] p-3 rounded-none cursor-pointer hover:bg-[#45e0b4] text-black hover:text-white"
             >
               Connect Wallet
@@ -85,7 +100,7 @@ const Welcome = () => {
             <div className={commonStyles}>Blockchain</div>
           </div>
         </div>
-        <div className="flex flex-col flex-1 items-center justify-start w-full mf:mt-0 mt-10">
+        {/*       <div className="flex flex-col flex-1 items-center justify-start w-full mf:mt-0 mt-10">
           <div className="p-3 justify-end items-start flex-col rounded-xl h-40 sm:w-72 w-full my-5 crypto-card white-glassmorphism drop-shadow-[0_45px_45px_rgba(0,0,0,1)]">
             <div className="flex justify-between flex-col w-full h-full">
               <div className="flex justify-between items-start">
@@ -135,7 +150,7 @@ const Welcome = () => {
               </button>
             )}
           </div>
-        </div>
+            </div>*/}
       </div>
     </div>
   );
