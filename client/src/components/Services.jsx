@@ -25,12 +25,11 @@ const Services = () => {
       </div>
       <div className="flex-1 flex flex-row justify-start items-center">
         <Card sx={{ maxWidth: 345 }} variant="outlined">
-          <CardHeader title="Create Basic DEX" subheader="March, 2022" />
+          <CardHeader title="Crypto Swapping" subheader="March, 2022" />
           <CardMedia component="img" height="194" image={deximg} alt="deximg" />
           <CardContent>
             <Typography variant="body2" color="text.secondary">
-              Add decentrilized exchange. Add ability to swap and exchange
-              different cryptos.
+              Add ability to swap cryptos. With time add larger list of cryptocurrencies.
             </Typography>
           </CardContent>
         </Card>
@@ -49,8 +48,7 @@ const Services = () => {
           <CardMedia component="img" height="194" image={deximg} alt="deximg" />
           <CardContent>
             <Typography variant="body2" color="text.secondary">
-              Add a diverse array of wallets for users to authenticate and use.
-              For now metamask.
+              Add more blockchains. Objetive to use other blockchains. Not only Ethereum.
             </Typography>
           </CardContent>
         </Card>
