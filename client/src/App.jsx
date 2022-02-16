@@ -5,6 +5,7 @@ import {
   Services,
   Transactions,
   SendEth,
+  News,
 } from "./components";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { Routes, Route, Link } from "react-router-dom";
@@ -26,6 +27,7 @@ const App = () => {
           <Routes>
             <Route exact path="/" element={<Welcome />} />
             <Route exact path="/sendeth" element={<SendEth />} />
+            <Route exact path="/news" element={<News />} />
           </Routes>
         </div>
         <Services />

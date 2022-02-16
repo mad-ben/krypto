@@ -38,7 +38,7 @@ const Services = () => {
           <CardMedia component="img" height="194" image={deximg} alt="deximg" />
           <CardContent>
             <Typography variant="body2" color="text.secondary">
-              Add more language support. For now, have english and portuguese at
+              Add more languages. For now, have english and portuguese at
               least.
             </Typography>
           </CardContent>
@@ -48,7 +48,7 @@ const Services = () => {
           <CardMedia component="img" height="194" image={deximg} alt="deximg" />
           <CardContent>
             <Typography variant="body2" color="text.secondary">
-              Add more blockchains. Objetive to use other blockchains. Not only Ethereum.
+              Add at least 1 more blockchain. Add Binance Smart Chain. Not only Ethereum.
             </Typography>
           </CardContent>
         </Card>
