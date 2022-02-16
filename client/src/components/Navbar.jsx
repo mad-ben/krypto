@@ -9,7 +9,7 @@ const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
-    <nav className="w-full flex md:justify-center justify-between items-center p-4">
+    <nav className="w-full flex md:justify-center justify-between items-center p-4 px-20">
       <div className="md_flex-[0.5] flex-initial justify-center items-center">
         <img src={logo} alt="logo" className="w-64 cursor-pointer" />
       </div>
@@ -18,7 +18,7 @@ const Navbar = () => {
           Home
         </Link>
         <Link to="/SendEth" className="mx-4 hover:text-white">
-          Send Ethereum
+          Send Cryptocurrency
         </Link>
         <Link to="/News" className="mx-4 hover:text-white">
           News
