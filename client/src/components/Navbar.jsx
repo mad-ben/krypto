@@ -9,11 +9,12 @@ const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
-    <nav className="w-full flex md:justify-center justify-between items-center p-4 px-20">
-      <div className="md_flex-[0.5] flex-initial justify-center items-center">
-        <img src={logo} alt="logo" className="w-64 cursor-pointer" />
+    <nav className="container flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full py-5">
+      <div className="text-lg text-white">
+        {/*<img src={logo} alt="logo" className="w-64 cursor-pointer" />*/}
+        andriy.kalysh.web3
       </div>
-      <ul className="text-emerald-300 md:flex hidden list-none flex-row justify-between items-center flex-initial">
+      <ul className="text-emerald-300 md:flex hidden items-center space-x-12">
         <Link to="/" className="mx-4 hover:text-white">
           Home
         </Link>
